@@ -54,7 +54,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: sindbad1613:latest
+          tags: sindbad1613/sindbad1613:latest
 
   deploy:
     runs-on: ubuntu-latest
