@@ -69,8 +69,8 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             # Выполняет pull образа с DockerHub
-            sudo docker pull sindbad1613/infra_actions
+            sudo docker pull sindbad1613
             #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
-            sudo docker run --rm -d -p 5000:5000 sindbad1613/infra_actions
+            sudo docker run --rm -d -p 5000:5000 sindbad1613
 
